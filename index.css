@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('./media/Rectangle\ 55.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 'div1'
+                        'div2'
+                        'div3';
+    
+}
+
+header{
+    grid-area: div1;
+    height: 20vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1{
+    font-family: Montserrat;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+color: #1F1F1F;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav button{
+height: 64px;
+width: 163px;
+border-radius: 6px;
+background: #010930;
+color: white;
+}
+
+nav a{
+    font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+    text-decoration: none;
+    color: #595959;
+}
+
+.showcase{
+    grid-area: div2;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+}
+
+.showcase p{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+color: #393939;
+}
+
+.showcase h2{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 49px;
+color: #010930;
+height: 98px;
+width: 375px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sliders{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.sliders img{
+    height: 50px;
+    width: 50px;
+    border: 2px;
+    height: 20vh;
+}
+
+.detail{
+    height: 51px;
+    width: 244px;
+}
+
+.detail p{
+    font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color: rgb(117, 101, 101);
+}
+
+
+
+@media only screen and (max-width: 780px){
+    body{
+        background-position: center;
+        background-size: cover;
+    }
+
+    .showcase{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .showcase p{
+        text-align: center;
+        color: #010930;
+    }
+
+    .sliders{
+        width: 40%;
+    }
+}
+
+/*@media only screen and (max-width: 375px){
+    body{
+        background-position: contain;
+    }
+}*/
