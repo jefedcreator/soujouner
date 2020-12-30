@@ -92,7 +92,7 @@ text-align: left;
 .showcase{
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 70vh;
 }
 
 .showcase p{
@@ -104,7 +104,7 @@ line-height: 17px;
 color: #393939;
 }
 
-.showcase h2{
+.showcase h3{
     font-family: Montserrat;
 font-style: normal;
 font-weight: 600;
@@ -141,7 +141,7 @@ footer{
 
 .detail p{
     font-family: Montserrat;
-font-size: 14px;
+font-size: 1em;
 font-style: normal;
 font-weight: 600;
 line-height: 17px;
@@ -284,8 +284,8 @@ color: rgb(117, 101, 101);
     }
 
     .detail{
-        height: 60%;
-        width: 40%;
+        height: auto;
+        width: 60%;
     }
 
     .detail p {
