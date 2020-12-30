@@ -157,18 +157,20 @@ color: rgb(117, 101, 101);
         margin: 0;
         padding: 0;
     }
-    
+
     header{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        height: 10vh;
     }
 
     .cover{
         background-image: url('./media/Rectangle\ 55.png');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position-x: -180px;
+        background-position-x: center;
+
     }
    
     section{
@@ -179,16 +181,31 @@ color: rgb(117, 101, 101);
     nav button{
         height: 30px;
         width: 80px;
-        border-radius: 6px;
-        background: lawngreen;
-        color:  #010930;
+        border-radius: 3px;
+        background: black;
+        color: white;
         cursor: pointer;
+    }
+
+    nav h1{
+        font-size: 1.5em;
     }
 
     .showcase{
         align-items: center;
         justify-content: center;
         width: 100%;
+    }
+
+    .showcase h2 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 49px;
+        color: #010930;
+        padding: 20px;
+        font-size: 2.0em;
+        text-align: center;
     }
 
     .showcase p{
@@ -232,24 +249,50 @@ color: rgb(117, 101, 101);
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        transform: translateY(600px);
+        transform: translateY(1000px);
         color: white;
         z-index: 1;
         transition: 0.3s ease-in-out;
     }
 
+    nav a{
+        color: rgb(225, 226, 132);
+    }
+
     nav a:hover{
-        color: lawngreen;
+        color: yellow;
     }
 
     .show{
         transform: translate(0);
     }
 
+
     .sliders img{
         height: 25px;
         width: 25px;
         border: 2px;
+        cursor: pointer;
+    }
+
+    footer{
+        height: 20vh
+    }
+
+    .detail{
+        height: 60%;
+        width: 40%;
+    }
+
+    .detail p {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
     }
 }
 
